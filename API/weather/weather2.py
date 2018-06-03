@@ -7,7 +7,7 @@ location = data['loc'].split(',')
 latitude = location[0]
 longitude = location[1]
 
-url = 'http://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&appid=ac7c75b9937a495021393024d0a90c44&units=metric'.format(latitude, longitude)
+url = 'http://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&appid= your api key here &units=metric'.format(latitude, longitude)
 
 res = requests.get(url)
 
