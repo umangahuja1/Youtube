@@ -1,13 +1,13 @@
 from selenium import webdriver
-
-driver = webdriver.Chrome()
+from selenium.webdriver.support.ui import WebDriverWait
+driver = webdriver.Chrome()  #inside chrome we may have to pass the argument as the location of the chrome driver
 driver.get('https://web.whatsapp.com/')
 
 name = input('Enter the name of user or group : ')
 msg = input('Enter your message : ')
 count = int(input('Enter the count : '))
-
-input('Enter anything after scanning QR code')
+wait = WebDriverWait(driver = driver, timeout = 900) # inscrease or decrease the timeout according to your net connection
+#input('Enter anything after scanning QR code')---no more need of this line as 
 
 user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
 user.click()
