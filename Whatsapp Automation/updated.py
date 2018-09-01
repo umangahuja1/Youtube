@@ -16,5 +16,5 @@ msg_box = driver.find_element_by_class_name('_2S1VP')
 
 for i in range(count):
     msg_box.send_keys(msg)
-    button = driver.find_element_by_class_name('_2lkdt')
+    button = driver.find_element_by_class_name('_35EW6')
     button.click()
