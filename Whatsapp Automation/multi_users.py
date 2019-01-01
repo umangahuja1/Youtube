@@ -1,6 +1,6 @@
 from selenium import webdriver
-
-driver = webdriver.Chrome()
+from webdriver_manager.chrome import ChromeDriverManager
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get('https://web.whatsapp.com/')
 
 all_names = ['Hack', 'Me', 'Bot']
