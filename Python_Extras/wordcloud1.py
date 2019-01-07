@@ -6,6 +6,5 @@ text = "keys coding competetive development Python webscraping automation getset
 cloud = WordCloud(background_color="white").generate(text)
 
 plt.imshow(cloud)
-plt.a
-xis('off')
+plt.axis('off')
 plt.show()
