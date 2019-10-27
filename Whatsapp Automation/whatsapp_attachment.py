@@ -17,7 +17,7 @@ attachment_box.click()
 
 image_box = driver.find_element_by_xpath(
     '//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]')
-image_box.send_keys(fialepath)
+image_box.send_keys(filepath)
 
 sleep(3)
 
