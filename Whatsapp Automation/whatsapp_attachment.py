@@ -21,5 +21,5 @@ image_box.send_keys(filepath)
 
 sleep(3)
 
-send_button = driver.find_element_by_xpath('//span[@data-icon="send-light"]')
+send_button = driver.find_element_by_xpath('//span[@data-icon="send"]')
 send_button.click()
