@@ -2,10 +2,10 @@ import speech_recognition as sr
 
 r = sr.Recognizer()
 with sr.Microphone() as source:
-    print("Speak Anything :")
+    print("Listening......")
     audio = r.listen(source)
     try:
         text = r.recognize_google(audio)
-        print("You said : {}".format(text))
+        print(f"User said : {text}")
     except:
-        print("Sorry could not recognize what you said")
+        print("Sorry, what you said was not understood. Please repeat")
